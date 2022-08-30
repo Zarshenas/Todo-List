@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/Style.css">
+    <link rel="shortcut icon" href="./Images/Page 1.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4c0d37a6d5.js" crossorigin="anonymous"></script>
+    <title>ToDo App</title>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <span class="text-d">T O D O</span>
+            <i class="text-d theme fa-solid fa-moon pointer"></i>
+            <i class="text-d theme fa fa-sun pointer disabled"></i>
+        </div>
+        <div class="task-input">
+            <div>
+                <i id="add-btn" class="fa-regular fa-plus pointer"></i>
+            </div>
+            <input id="todo-input" type="text" placeholder="Create a new todo...">
+        </div>
+        <div class="display-tasks">
+            <div class="tasks">
+                
+            </div>
+            <div class="data-info">
+                <p id="task-counter" class="text-d">0 Tasks Left</p>
+                <p id="remove-completed" class="pointer text-d">Clear Completed</p>
+            </div>
+        </div>
+        <footer>
+            <div class="menu-container">
+                <div id="menu-1"class="menu">
+                    <i class="fa-solid fa-bolt pointer d-text"></i>
+                    <span class="d-text"></span>
+                </div>
+                <div id="menu-2"class="menu">
+                    <i class="fa-solid fa-list pointer d-text"></i>
+                    <span class="d-text"></span>
+                </div>
+                <div id="menu-3"class="menu">
+                    <i class="fa-solid fa-check check-menu pointer d-text"></i>
+                    <span class="d-text"></span>
+                </div>
+            </div>
+            <h1 class="text-d drag-info">Drag and Drop to reorder the List</h1>
+            <i id="display-error"></i>
+        </footer>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.js"></script>
+<script src="./Javascript/App.js"></script>
+</html>

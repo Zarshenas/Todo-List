@@ -1,0 +1,23 @@
+@mixin flex ($dir , $justify , $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin mediaQuery ($width){
+    @if ($width == 1500) {
+        @media (min-width:1500px) {
+            @content;
+        }
+    }
+    @else if ($width == 480){
+        @media (max-width:480px) {
+            @content;
+        }
+    }
+    @else if ($width == 550){
+        @media (max-height:550px) {
+            @content;
+        }
+    }
+}
